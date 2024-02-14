@@ -15,7 +15,9 @@
           </div>
           <div class="file__col file-name">
             <div class="file__meta">Название</div>
-            <div class="file__meta-value">{{ file.name }}</div>
+            <div class="file__meta-value">
+              <Icon icon="folder" /> <span>{{ file.name }}</span>
+            </div>
           </div>
           <div class="file__col file-order">
             <div class="file__meta">Очередность</div>
@@ -56,7 +58,9 @@
         </div>
         <div class="file__col file-name">
           <div class="file__meta">Название</div>
-          <div class="file__meta-value">{{ file.name }}</div>
+          <div class="file__meta-value">
+            <Icon icon="file" /><span>{{ file.name }}</span>
+          </div>
         </div>
         <div></div>
         <div class="file__col file-order">
@@ -76,16 +80,6 @@ import { ref } from 'vue'
 import Icon from '@/components/Icon.vue'
 import FileList from '@/components/FileList.vue'
 import Dropdown from './Dropdown.vue'
-// class File {
-//   constructor(id, number, name, order, categories, children) {
-//     this.id = id
-//     this.number = number
-//     this.name = name
-//     this.order = order
-//     this.categories = categories
-//     this.children = children
-//   }
-// }
 const fileListItem = defineProps({
   file: Object
 })

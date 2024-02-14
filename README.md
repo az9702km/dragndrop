@@ -1,35 +1,60 @@
 # dragdrop
 
-This template should help get you started developing with Vue 3 in Vite.
+Веб приложение для демонстрации ручного перетаскивания элементов списка.
 
-## Recommended IDE Setup
+Основные условия:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1. Перемещение элементов перетаскиванием мыши.
+2. Вложенные элементы перетаскиваются в рамках родительского элемента.
+3. Элементы не должны перемещаться за пределы родительского элемента.
 
-## Customize configuration
+Стэк:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Vue CLI
+2. Vue.js
 
-## Project Setup
+Дизайн:
+
+[Ссылка на Фигму](https://www.figma.com/file/hXkwR1VQGyQlzxkbUJCX9V/Asaka_test?node-id=0:1)
+
+## Установка
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Запуск в режиме разработчика
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Запуск сборки на продакшн
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Линтер [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
 ```
+
+### Результаты
+
+Полностью не выполнены обязательные условия.
+
+Основные условия:
+
+1. Перемещение элементов перетаскиванием мыши.
+2. ~~Вложенные элементы перетаскиваются в рамках родительского элемента.~~
+3. ~~Элементы не должны перемещаться за пределы родительского элемента.~~
+
+Потраченое время:
+
+Приблизительно сутки
+
+### Заключение
+
+За время выполнения работы трудности практически не было за исключением отсутствия более подробной документации о событиях Vue js, не смог найти более подробную информацию про события drag. Так же было немножко трудно построить информационную архитектуру. Есть идеи на счет ограничения поля перетаскивания, можно попробовать stop propogation либо с помощю самой event.target. **К сожалению на уложился за скрок. Был бы благодарен если бы дали свои советы, и оценили работу.**
